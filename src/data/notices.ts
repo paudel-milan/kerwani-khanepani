@@ -10,9 +10,9 @@ export interface Notice {
 export const notices: Notice[] = [
   {
     id: "1",
-    title: "Public Notice Regarding Water Supply Interruption in Ward No. 5",
+    title: "Public Notice Regarding Water Supply Interruption in Ward No. 1",
     date: "2081/04/10",
-    description: "Water supply will be temporarily interrupted in Ward No. 5 for maintenance work.",
+    description: "Water supply will be temporarily interrupted in Ward No. 1 for maintenance work.",
     pdfUrl: "/notices/notice-ward5-interruption.pdf",
     isUrgent: true
   },
@@ -32,7 +32,7 @@ export const notices: Notice[] = [
   },
   {
     id: "4",
-    title: "Emergency Water Outage Due to Pipe Burst in Buddha Chowk",
+    title: "Emergency Water Outage Due to Pipe Burst in Rajabari",
     date: "2081/03/28",
     description: "Emergency maintenance due to pipe burst. Water supply will be restored within 24 hours.",
     pdfUrl: "/notices/notice-buddha-chowk-emergency.pdf",

@@ -76,7 +76,7 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600">
-                      Devdaha-7, Rupandehi<br />
+                      Devdaha-1, Rupandehi<br />
                       Lumbini Province, Nepal
                     </p>
                   </CardContent>
@@ -115,7 +115,7 @@ const Contact = () => {
                       href="mailto:devdaha.dwssa@gmail.com" 
                       className="text-gray-600 hover:text-teal-700 transition-colors"
                     >
-                      devdaha.dwssa@gmail.com
+                      kerwanikhanepani@gmail.com
                     </a>
                   </CardContent>
                 </Card>
