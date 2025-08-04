@@ -16,7 +16,7 @@ const KeyPersonnel = () => {
       id: "1",
       name: "Mr. Bodh Raj Gaudel",
       position: "Chairman",
-      phone: "+977 9856030725",
+      phone: "+977 9857022031",
       image: "/images/personnel/chairman.jpg",
       email: "bodhrajgaudel@gmail.com",
       description: "A visionary leader committed to equitable community development and clean water access."
@@ -25,7 +25,7 @@ const KeyPersonnel = () => {
       id: "2",
       name: "Mrs. Gita Bhandari",
       position: "Vice Chairman",
-      phone: "+977 9869238201",
+      phone: "+977 9869278201",
       email: "gita@gmail.com",
       image: "/images/personnel/vice-chairman.jpg",
       description: "Passionate about sustainability and local engagement with a focus on water conservation."
@@ -34,7 +34,7 @@ const KeyPersonnel = () => {
       id: "3",
       name: "Mr. Deepak Paudel",
       position: "Secretary",
-      phone: "+977 9857025580",
+      phone: "+977 9857058880",
       email: "deepak@gmail.com",
       image: "/images/personnel/secretary.jpg",
       description: "Organized and detail-oriented, overseeing administrative and operational processes."
