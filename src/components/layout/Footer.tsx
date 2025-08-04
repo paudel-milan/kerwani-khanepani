@@ -83,7 +83,7 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div className="text-sm opacity-90">
-                  <p>Kerwani, Rupandehi</p>
+                  <p>Devadaha-1, Rajabari</p>
                   <p>Lumbini Province, Nepal</p>
                 </div>
               </div>

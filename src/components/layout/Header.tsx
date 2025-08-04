@@ -37,7 +37,7 @@ const Header = () => {
             <div className="flex items-center gap-4 mb-2 sm:mb-0">
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
-                <span>Kerwani-3, Rupandehi, Nepal</span>
+                <span>Rajabari Devdaha-1, Rupandehi, Nepal</span>
               </div>
             </div>
             <div className="flex items-center gap-4">

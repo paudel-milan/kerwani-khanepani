@@ -14,20 +14,30 @@ const KeyPersonnel = () => {
   const keyPersonnel = [
     {
       id: "1",
-      name: "Mr. Guman Singh Kunwar",
+      name: "Mr. Bodh Raj Gaudel",
       position: "Chairman",
       phone: "+977 9856030725",
       image: "/images/personnel/chairman.jpg",
+      email: "bodhrajgaudel@gmail.com",
       description: "A visionary leader committed to equitable community development and clean water access."
     },
     {
       id: "2",
-      name: "Mrs. Anisha Paudel",
+      name: "Mrs. Gita Bhandari",
       position: "Vice Chairman",
-      phone: "+977 9869928121",
-      email: "anisha12kk@gmail.com",
+      phone: "+977 9869238201",
+      email: "gita@gmail.com",
       image: "/images/personnel/vice-chairman.jpg",
       description: "Passionate about sustainability and local engagement with a focus on water conservation."
+    },
+    {
+      id: "3",
+      name: "Mr. Deepak Paudel",
+      position: "Secretary",
+      phone: "+977 9857025580",
+      email: "deepak@gmail.com",
+      image: "/images/personnel/secretary.jpg",
+      description: "Organized and detail-oriented, overseeing administrative and operational processes."
     }
   ];
 
@@ -43,7 +53,7 @@ const KeyPersonnel = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-8">
           {keyPersonnel.map((person) => (
             <Card key={person.id} className="shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center pb-4">

@@ -20,7 +20,12 @@ const Gallery = () => {
     { id: 10, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure4.jpg" },
     { id: 11, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure5.jpg" },
     { id: 12, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure6.jpg" },
-
+    { id: 13, title: "Community Events", category: "community", image: "/images/gallery/community/community1.jpg" },
+    { id: 14, title: "Community Events", category: "community", image: "/images/gallery/community/community2.jpg" },
+    { id: 15, title: "Community Events", category: "community", image: "/images/gallery/community/community3.jpg" },
+    { id: 16, title: "Community Events", category: "community", image: "/images/gallery/community/community4.jpg" },
+    { id: 17, title: "Community Events", category: "community", image: "/images/gallery/community/community5.jpg" },
+    { id: 18, title: "Community Events", category: "community", image: "/images/gallery/community/community6.jpg" },
   ];
 
   const categories = [

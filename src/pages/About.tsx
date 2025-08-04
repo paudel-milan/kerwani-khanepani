@@ -61,7 +61,7 @@ const About = () => {
                   Our Organizational Identity
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Devdaha Khanepani Sansthan is a vital public utility situated in Devdaha Municipality, Lumbini Province, Nepal. Our core mission is to provide the community with a dependable supply of pure and safe drinking water, a service we have proudly delivered for over 15 years.
+                  Kerwani Water Supply Consumers and Sanitation Association is a vital public utility situated in Devdaha Municipality, Lumbini Province, Nepal. Our core mission is to provide the community with a dependable supply of pure and safe drinking water, a service we have proudly delivered for over 15 years.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   Our operations are founded on the core tenets of transparency, accountability, and the active participation of our community members. We firmly believe that access to clean water is a fundamental right, and our tireless efforts are focused on ensuring that every household within our service area enjoys this essential resource.

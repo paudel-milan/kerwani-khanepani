@@ -41,7 +41,7 @@ const AboutSection = () => {
               </h2>
               {/* Description in English */}
               <p className="text-lg text-gray-600 leading-relaxed">
-                Devdaha Khanepani Sansthan is a public institution located in Devdaha Municipality, 
+                Kerwani Water Supply Consumers and Sanitation Association is a public institution located in Devdaha Municipality, 
                 Lumbini Province, Nepal. We are dedicated to continuously providing pure, safe, and 
                 reliable drinking water services to the residents of this area.
               </p>
