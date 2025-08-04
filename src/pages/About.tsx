@@ -26,8 +26,8 @@ const About = () => {
   ];
 
   const achievements = [
-    "Successfully extended our service to over 5,500 households in Devdaha Municipality",
-    "Achieved and maintained a service uptime of 99.9% over the last five years",
+    "Successfully extended our service to over 1,900 households in Devdaha Municipality",
+    "Achieved and maintained a service uptime of 99.9% over the last 15 years",
     "Successfully executed major infrastructure and pipeline upgrades",
     "Launched collaborative programs for community-driven water management",
     "Earned national certification for meeting stringent water quality standards",

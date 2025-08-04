@@ -86,7 +86,7 @@ const ServicesSection = () => {
                 नयाँ जडान आवेदन / Apply for New Connection
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-teal-600 text-teal-700 hover:bg-teal-50">
+            <Button asChild variant="outline" size="lg" className="border-teal-600 text-teal-700 hover:bg-teal-500">
               <Link to="/contact">
                 <Phone className="w-5 h-5 mr-2" />
                 Contact Support

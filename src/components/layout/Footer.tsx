@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/kerwanikhanepani"
+                href="https://www.facebook.com/profile.php?id=100054009788120&mibextid=wwXIfr&rdid=BeSGjzp88cTwACc2&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F7G9fHRLT%2F%3Fmibextid%3DwwXIfr#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-teal-800/50 rounded-full hover:bg-teal-800/80 transition-colors"

@@ -23,8 +23,8 @@ const AboutSection = () => {
   ];
 
   const stats = [
-    { number: "5500+", label: "Connected Households" },
-    { number: "20+", label: "Years of Service" },
+    { number: "1900+", label: "Connected Households" },
+    { number: "15+", label: "Years of Service" },
     { number: "99.9%", label: "Service Reliability" },
     { number: "24/7", label: "Customer Support" }
   ];
@@ -49,7 +49,7 @@ const AboutSection = () => {
 
             <div className="space-y-4">
               <p className="text-gray-600">
-                Since its establishment, the Sansthan has aimed to improve the health and living 
+                Since its establishment in 2063 B.S, the Association has aimed to improve the health and living 
                 standards of the community. We are fully committed to:
               </p>
               <ul className="space-y-2">

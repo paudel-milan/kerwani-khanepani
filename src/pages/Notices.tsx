@@ -1,17 +1,19 @@
 import { useState } from 'react';
-import { Download, Calendar, AlertTriangle, Search, Filter, X } from 'lucide-react';
+import { Download, Calendar, AlertTriangle, Search, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { notices } from '@/data/notices';
+import requestImage from '@/assets/request.png';  // Import your request image
 
 const Notices = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterUrgent, setFilterUrgent] = useState(false);
   const [selectedNotice, setSelectedNotice] = useState(null);
   const [isNoticeDialogOpen, setIsNoticeDialogOpen] = useState(false);
+  const [isRequestDialogOpen, setIsRequestDialogOpen] = useState(false); // New state for request image dialog
 
   const filteredNotices = notices.filter(notice => {
     const matchesSearch = notice.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -126,6 +128,30 @@ const Notices = () => {
         </div>
       </section>
 
+      {/* Request to Customers Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-poppins">
+              ग्राहकलाई अनुरोध / Request to Customers
+            </h2>
+            <p className="text-gray-600 text-lg mb-6">
+              Important notice for all our valued customers. Please review the request below.
+            </p>
+            <div
+              className="cursor-pointer inline-block shadow-lg hover:shadow-xl transition-all duration-300 rounded-md overflow-hidden max-w-lg mx-auto"
+              onClick={() => setIsRequestDialogOpen(true)}
+            >
+              <img
+                src={requestImage}
+                alt="Request to Customers"
+                className="w-full rounded-md"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Notice Subscription Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -187,6 +213,17 @@ const Notices = () => {
               </div>
             </div>
           )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Request Image Dialog */}
+      <Dialog open={isRequestDialogOpen} onOpenChange={setIsRequestDialogOpen}>
+        <DialogContent className="max-w-3xl p-0 overflow-hidden">
+          <img
+            src={requestImage}
+            alt="Request to Customers Large View"
+            className="w-full h-auto"
+          />
         </DialogContent>
       </Dialog>
     </div>

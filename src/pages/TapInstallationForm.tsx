@@ -12,10 +12,10 @@ const TapInstallationForm = () => {
   ];
 
   const fees = [
-    { type: "New Connection (Household)", fee: "NPR 8100" },
-    { type: "New Connection (Commercial)", fee: "NPR " },
-    { type: "Connection Upgrade", fee: "NPR 8,000" },
-    { type: "Meter Installation", fee: "NPR 3,500" }
+    { type: "New Connection (Household)", fee: "NPR 5025" },
+    { type: "New Connection (Commercial)", fee: "NPR 6500" },
+    { type: "Connection Upgrade", fee: "NPR 3000" },
+    { type: "Meter Installation", fee: "NPR 1500" }
   ];
 
   return (
@@ -99,7 +99,7 @@ const TapInstallationForm = () => {
               />
             </div>
 
-            <a href="/documents/tap-application-form.pdf" download>
+            <a href="/documents/tap-installation-form.pdf" download>
               <Button className="bg-teal-700 hover:bg-teal-800 text-white shadow-lg" size="lg">
                 <Download className="w-5 h-5 mr-2" />
                 Download PDF Form

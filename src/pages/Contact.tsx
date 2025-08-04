@@ -92,12 +92,12 @@ const Contact = () => {
                   <CardContent className="space-y-2">
                     <div>
                       <a href="tel:+97771577590" className="text-gray-600 hover:text-teal-700 transition-colors">
-                        +977-71-577590
+                        +977-71-222222
                       </a>
                     </div>
                     <div>
                       <a href="tel:+97771402402" className="text-gray-600 hover:text-teal-700 transition-colors">
-                        +977-71-402402
+                        +977-71-222222
                       </a>
                     </div>
                   </CardContent>
@@ -144,7 +144,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a 
-                    href="https://www.facebook.com/devdahakhanepani" 
+                    href="https://www.facebook.com/profile.php?id=100054009788120&mibextid=wwXIfr&rdid=NeDLZRigVvphnNY9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F7G9fHRLT%2F%3Fmibextid%3DwwXIfr#" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 transition-colors"
