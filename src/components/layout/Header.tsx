@@ -37,7 +37,7 @@ const Header = () => {
             <div className="flex items-center gap-4 mb-2 sm:mb-0">
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
-                <span>Rajabari Devdaha-1, Rupandehi, Nepal</span>
+                <span>Devdaha-1, Rajabari Nepal</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -47,7 +47,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-1">
                 <Mail className="w-4 h-4" />
-                <span>kerwanikhanepani@gmail.com</span>
+                <span>kerawanikhanepani@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <a

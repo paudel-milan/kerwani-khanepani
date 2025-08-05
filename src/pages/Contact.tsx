@@ -111,7 +111,7 @@ const Contact = () => {
                       href="mailto:devdaha.dwssa@gmail.com" 
                       className="text-gray-600 hover:text-teal-700 transition-colors"
                     >
-                      kerwanikhanepani@gmail.com
+                      kerawanikhanepani@gmail.com
                     </a>
                   </CardContent>
                 </Card>

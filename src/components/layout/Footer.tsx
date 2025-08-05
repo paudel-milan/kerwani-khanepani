@@ -96,7 +96,7 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0" />
                 <div className="text-sm opacity-90">
-                  <p>kerwanikhanepani@gmail.com</p> {/* Replace with actual */}
+                  <p>kerawanikhanepani@gmail.com</p> {/* Replace with actual */}
                 </div>
               </div>
               <div className="flex items-start gap-2">
