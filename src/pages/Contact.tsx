@@ -86,20 +86,16 @@ const Contact = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-3 text-gray-800">
                       <Phone className="w-5 h-5 text-teal-700" />
-                      Phone Numbers
+                      Phone Number
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <div>
                       <a href="tel:+97771577590" className="text-gray-600 hover:text-teal-700 transition-colors">
-                        +977-71-222222
+                        +977 9857058505
                       </a>
                     </div>
-                    <div>
-                      <a href="tel:+97771402402" className="text-gray-600 hover:text-teal-700 transition-colors">
-                        +977-71-222222
-                      </a>
-                    </div>
+                    
                   </CardContent>
                 </Card>
 

@@ -90,7 +90,7 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <div className="text-sm opacity-90">
-                  <p>+977-71-22222</p> {/* Replace with actual */}
+                  <p>+977 9857058505</p> {/* Replace with actual */}
                 </div>
               </div>
               <div className="flex items-center gap-2">

@@ -15,7 +15,7 @@ export const boardMembers: BoardMember[] = [
     position: "अध्यक्ष",
     description: "A visionary leader committed to equitable community development and clean water access.",
     phone: "+977 9857022031",
-    email: "bodhraj@devdaha.org.np",
+    email: "bodhraj@gmail.com",
     image: "/images/board/chairman.jpg",
   },
   {
@@ -24,7 +24,7 @@ export const boardMembers: BoardMember[] = [
     position: "उपाध्यक्ष (कार्य पालिका सदस्य)",
     description: "Passionate about sustainability and local engagement with a focus on water conservation.",
     phone: "+977 9869278201",
-    email: "gita@devdaha.org.np",
+    email: "gita@gmail.com",
     image: "/images/board/vice-chairman.jpg",
   },
   {
@@ -33,7 +33,7 @@ export const boardMembers: BoardMember[] = [
     position: "सचिव",
     description: "Organized and detail-oriented, overseeing administrative and operational processes.",
     phone: "+977 9857058880",
-    email: "dipak@devdaha.org.np",
+    email: "dipakpaudelji@gmail.com",
     image: "/images/board/secretary.jpg",
   },
   {
@@ -41,8 +41,8 @@ export const boardMembers: BoardMember[] = [
     name: "घनश्याम डुम्रे",
     position: "कोषाध्यक्ष",
     description: "Ensures financial transparency and manages budget allocations effectively.",
-    phone: "+977 9857000000",
-    email: "ghanshyam@devdaha.org.np",
+    phone: "+977 9847049753",
+    email: "ghanshyam@gmail.com",
     image: "/images/board/treasure.jpg",
   },
   {
@@ -51,7 +51,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य (वडा सदस्य)",
     description: "Advocates for community welfare and participates in outreach programs.",
     phone: "+977 9857077322",
-    email: "lalman@devdaha.org.np",
+    email: "lalman@gmail.com",
     image: "/images/board/member3.jpg",
   },
   {
@@ -60,7 +60,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Supports infrastructure development and field-level execution.",
     phone: "+977 9857044249",
-    email: "khumisara@devdaha.org.np",
+    email: "khumisara@gmail.com",
     image: "/images/board/member1.jpg",
   },
   {
@@ -69,7 +69,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Dedicated to inclusive participation and community mobilization.",
     phone: "+977 9857010095",
-    email: "tika@devdaha.org.np",
+    email: "tika@gmail.com",
     image: "/images/board/member5.jpg",
   },
   {
@@ -78,7 +78,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Ensures gender representation and women's involvement in governance.",
     phone: "+977 9847268514",
-    email: "goma@devdaha.org.np",
+    email: "goma@gmail.com",
     image: "/images/board/member2.jpg",
   },
   {
@@ -87,7 +87,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Works towards digital solutions and organizational efficiency.",
     phone: "+977 9825411145",
-    email: "kim@devdaha.org.np",
+    email: "kim@gmail.com",
     image: "/images/board/member4.jpg",
   },
   {
@@ -96,7 +96,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Experienced in field operations and local engagement initiatives.",
     phone: "+977 9816420565",
-    email: "kul@devdaha.org.np",
+    email: "kul@gmail.com",
     image: "/images/board/member7.jpg",
   },
   {
@@ -105,7 +105,7 @@ export const boardMembers: BoardMember[] = [
     position: "सदस्य",
     description: "Handles technical planning and maintenance strategy for water systems.",
     phone: "+977 9812965865",
-    email: "mina@devdaha.org.np",
+    email: "mina@gmail.com",
     image: "/images/board/member6.jpg",
   }
 ];

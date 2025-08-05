@@ -16,7 +16,7 @@ export const staff: Staff[] = [
     position: "लेखा तथा प्रशासन प्रमुख",
     department: "Administration",
     phone: "9841617208",
-    email: "divya@devdahakhanepani.org.np",
+    email: "divyabaralsapkota@gmail.com",
     image: "/images/staff/staff1.jpg",
   },
   {
@@ -25,7 +25,7 @@ export const staff: Staff[] = [
     position: "कार्यालय सहायक",
     department: "Administration",
     phone: "9703392404",
-    email: "vikram@devdahakhanepani.org.np",
+    email: "missubikram5@gmail.com",
     image: "/images/staff/staff2.jpg",
   },
   {
@@ -34,7 +34,7 @@ export const staff: Staff[] = [
     position: "प्लम्बर प्रमुख",
     department: "Technical",
     phone: "9703392403",
-    email: "krishnaprasad@devdahakhanepani.org.np",
+    email: " krishnapneupane16@gmail.com",
     image: "/images/staff/staff3.jpg",
   },
   {
@@ -43,7 +43,7 @@ export const staff: Staff[] = [
     position: "प्लम्बर",
     department: "Technical",
     phone: "9703392406",
-    email: "jitendra@devdahakhanepani.org.np",
+    email: "anilmallah29@gmail.com",
     image: "/images/staff/staff4.jpg",
   },
   {
@@ -52,7 +52,7 @@ export const staff: Staff[] = [
     position: "अपरेटर",
     department: "Operations",
     phone: "9703392401",
-    email: "ramnarayan@devdahakhanepani.org.np",
+    email: "ramnarayankewat77@gmail.com",
     image: "/images/staff/staff5.jpg",
   },
   {
@@ -61,7 +61,7 @@ export const staff: Staff[] = [
     position: "मिटर रिडर",
     department: "Field Services",
     phone: "9703392405",
-    email: "tika@devdahakhanepani.org.np",
+    email: " tikaparajulipandey61@gmail.com",
     image: "/images/staff/staff6.jpg",
   },
   {
@@ -70,7 +70,7 @@ export const staff: Staff[] = [
     position: "कार्यालय सहयाेगी",
     department: "Support",
     phone: "9703392402",
-    email: "khim@devdahakhanepani.org.np",
+    email: " shyamtmagar618@gmail.com",
     image: "/images/staff/staff7.jpg",
   },
 ];
