@@ -255,7 +255,7 @@ const Contact = () => {
               Find Us on Map
             </h2>
             <p className="text-lg text-gray-600">
-              Visit our office in Devdaha-7, Rupandehi for any in-person assistance
+              Visit our office in Devdaha-1, Rupandehi for any in-person assistance
             </p>
           </div>
 
