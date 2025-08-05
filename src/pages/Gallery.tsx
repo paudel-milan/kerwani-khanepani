@@ -14,6 +14,9 @@ const Gallery = () => {
     { id: 4, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly4.jpg" },
     { id: 5, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly5.jpg" },
     { id: 6, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly6.jpg" },
+    { id: 25, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly7.jpg" },
+    { id: 26, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly8.jpg" },
+    { id: 27, title: "General Assembly 2025", category: "general-assembly", image: "/images/gallery/assembly/assembly9.jpg" },
     { id: 7, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure1.jpg" },
     { id: 8, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure2.jpg" },
     { id: 9, title: "Infrastructure", category: "infrastructure", image: "/images/gallery/infrastructure/infrastructure3.jpg" },
@@ -26,6 +29,13 @@ const Gallery = () => {
     { id: 16, title: "Community Events", category: "community", image: "/images/gallery/community/community4.jpg" },
     { id: 17, title: "Community Events", category: "community", image: "/images/gallery/community/community5.jpg" },
     { id: 18, title: "Community Events", category: "community", image: "/images/gallery/community/community6.jpg" },
+    { id: 19, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration1.jpg" },
+    { id: 20, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration2.jpg" },
+    { id: 21, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration3.jpg" },
+    { id: 22, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration4.jpg" },
+    { id: 23, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration5.jpg" },
+    { id: 24, title: "Inauguration Ceremony", category: "inauguration", image: "/images/gallery/inaugration/inaugration6.jpg" },
+
   ];
 
   const categories = [
@@ -34,7 +44,8 @@ const Gallery = () => {
     { id: 'infrastructure', label: 'Infrastructure' },
     { id: 'community', label: 'Community' },
     { id: 'testing', label: 'Testing' },
-    { id: 'training', label: 'Training' }
+    { id: 'training', label: 'Training' },
+    {id: 'inauguration', label: 'Inauguration' },
   ];
 
   const filteredItems = selectedCategory === 'all'
