@@ -13,9 +13,6 @@ const TapInstallationForm = () => {
 
   const fees = [
     { type: "New Connection (Household)", fee: "NPR 5025" },
-    { type: "New Connection (Commercial)", fee: "NPR 6500" },
-    { type: "Connection Upgrade", fee: "NPR 3000" },
-    { type: "Meter Installation", fee: "NPR 1500" }
   ];
 
   return (
