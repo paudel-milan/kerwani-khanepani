@@ -13,7 +13,7 @@ export const staff: Staff[] = [
   {
     id: "1",
     name: "दिब्या बराल",
-    position: "लेखा तथा प्रशासन प्रमुख",
+    position: "व्यवस्थापक",
     department: "Administration",
     phone: "9841617208",
     email: "divyabaralsapkota@gmail.com",
@@ -22,7 +22,7 @@ export const staff: Staff[] = [
   {
     id: "2",
     name: "विक्रम पौडेल",
-    position: "कार्यालय सहायक",
+    position: "सह-व्यवस्थापक",
     department: "Administration",
     phone: "9703392404",
     email: "missubikram5@gmail.com",

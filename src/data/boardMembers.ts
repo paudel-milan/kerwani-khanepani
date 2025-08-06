@@ -20,8 +20,8 @@ export const boardMembers: BoardMember[] = [
   },
   {
     id: "2",
-    name: "गिता भन्डारि",
-    position: "उपाध्यक्ष (कार्य पालिका सदस्य)",
+    name: "गिता भण्डारी",
+    position: "उपाध्यक्ष",
     description: "Passionate about sustainability and local engagement with a focus on water conservation.",
     phone: "+977 9869278201",
     email: "gita@gmail.com",
@@ -48,7 +48,7 @@ export const boardMembers: BoardMember[] = [
   {
     id: "5",
     name: "लालमन यादव",
-    position: "सदस्य (वडा सदस्य)",
+    position: "सदस्य",
     description: "Advocates for community welfare and participates in outreach programs.",
     phone: "+977 9857077322",
     email: "lalman@gmail.com",
