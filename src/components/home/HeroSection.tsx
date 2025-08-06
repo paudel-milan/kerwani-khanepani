@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import heroImage1 from '@/assets/hero-image-1.jpg';
 import heroImage2 from '@/assets/hero-image-2.jpg';
 import heroImage3 from '@/assets/hero-image-3.jpg';
-import heroImage4 from '@/assets/hero-image-4.jpg';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,7 +13,10 @@ const HeroSection = () => {
 
   const slides = [
     {
-      image: heroImage4, // No content slide (visual-only)
+      type: 'text',
+      title: 'केरवानी खानेपानी उपभोक्ता तथा सरसफाइ संस्था',
+      subtitle: 'देवदह १, राजबारी, रूपन्देही',
+      background: 'bg-gradient-to-tr from-teal-900 via-teal-700 to-teal-500',
     },
     {
       image: heroImage1,
@@ -39,20 +41,26 @@ const HeroSection = () => {
     },
   ];
 
+  // --- MODIFIED: Auto-play timer now resets to 0 from the last slide ---
   useEffect(() => {
     if (isPaused) return;
     const timer = setInterval(() => {
-      nextSlide();
+      setCurrentSlide((prev) => {
+        // If on the last slide, go back to the first, otherwise go to the next
+        return prev === slides.length - 1 ? 0 : prev + 1;
+      });
     }, 6000);
     return () => clearInterval(timer);
-  }, [isPaused, currentSlide]);
+  }, [isPaused, currentSlide]); // currentSlide dependency is kept to reset timer on manual nav
 
+  // --- MODIFIED: nextSlide stops at the end ---
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => Math.min(prev + 1, slides.length - 1));
   };
 
+  // --- MODIFIED: prevSlide stops at the beginning ---
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide((prev) => Math.max(prev - 1, 0));
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -62,6 +70,7 @@ const HeroSection = () => {
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX.current === null) return;
     const deltaX = e.changedTouches[0].clientX - touchStartX.current;
+    // We still call prev/nextSlide, which now have built-in limits
     if (deltaX > 50) prevSlide();
     else if (deltaX < -50) nextSlide();
     touchStartX.current = null;
@@ -77,35 +86,47 @@ const HeroSection = () => {
     >
       {/* Carousel Container */}
       <div className="relative w-full h-full overflow-hidden">
-        <div
-          className="flex transition-transform duration-1000 ease-in-out h-full"
-          style={{
-            width: `${slides.length * 100}%`,
-            transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
-          }}
-        >
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="w-full h-full flex-shrink-0 relative"
-              style={{ width: `${100 / slides.length}%` }}
-            >
-              <img
-                src={slide.image}
-                alt={`Slide ${index}`}
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#003f5c]/70 via-[#2f4b7c]/30 to-transparent" />
-            </div>
-          ))}
-        </div>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="absolute w-full h-full transition-opacity duration-1000 ease-in-out"
+            style={{ opacity: currentSlide === index ? 1 : 0 }}
+          >
+            {slide.type === 'text' ? (
+              <div
+                className={`w-full h-full flex flex-col items-center justify-center text-white text-center px-4 ${slide.background}`}
+              >
+                <div className="animate-slide-in-from-right">
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold drop-shadow-lg leading-tight">
+                    {slide.title}
+                  </h1>
+                  <p className="text-lg sm:text-xl md:text-2xl mt-4 opacity-90">
+                    {slide.subtitle}
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <>
+                <img
+                  src={slide.image}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#003f5c]/70 via-[#2f4b7c]/30 to-transparent" />
+              </>
+            )}
+          </div>
+        ))}
       </div>
 
-      {/* Overlay Content — Hide if no title */}
-      {slides[currentSlide].title && (
+      {/* Overlay Content for image-based slides */}
+      {slides[currentSlide].type !== 'text' && (
         <div className="absolute inset-0 flex items-center">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="max-w-4xl text-white space-y-4 animate-fade-in">
+          <div
+            key={currentSlide}
+            className="container mx-auto px-4 sm:px-6 lg:px-12 animate-slide-in-from-right"
+          >
+            <div className="max-w-4xl text-white space-y-4">
               <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wide leading-snug drop-shadow-md">
                 {slides[currentSlide].title}
               </h1>
@@ -127,7 +148,7 @@ const HeroSection = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="text-sm sm:text-base border-white text-green-700 hover:bg-white hover:text-blue-900 rounded-md shadow-md"
+                  className="text-sm sm:text-base border-white text-white hover:bg-white hover:text-blue-900 rounded-md shadow-md"
                 >
                   <Link to="/about">हाम्रो बारेमा</Link>
                 </Button>
@@ -137,16 +158,18 @@ const HeroSection = () => {
         </div>
       )}
 
-      {/* Navigation Arrows */}
+      {/* --- MODIFIED: Navigation Arrows are now disabled at ends --- */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/30 rounded-full z-10"
+        disabled={currentSlide === 0}
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/30 rounded-full z-10 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
       >
         <ChevronLeft className="w-6 h-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/30 rounded-full z-10"
+        disabled={currentSlide === slides.length - 1}
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/30 rounded-full z-10 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
       >
         <ChevronRight className="w-6 h-6 text-white" />
       </button>
